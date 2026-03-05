@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:agri_scan/screens/ai_scanning_screen.dart';
+import 'package:agri_scan/components/agri_bottom_nav.dart';
 
 class CameraScreen extends StatelessWidget {
   static const String routeName = '/camera';
@@ -97,6 +98,7 @@ class CameraScreen extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const AgriBottomNav(currentIndex: 1),
     );
   }
 }

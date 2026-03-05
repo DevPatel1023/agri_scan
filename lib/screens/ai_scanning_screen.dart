@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:agri_scan/screens/disease_result_screen.dart';
+import 'package:agri_scan/components/agri_bottom_nav.dart';
 
 class AiScanningScreen extends StatelessWidget {
   static const String routeName = '/scanning';
@@ -81,6 +82,7 @@ class AiScanningScreen extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const AgriBottomNav(currentIndex: 2),
     );
   }
 }

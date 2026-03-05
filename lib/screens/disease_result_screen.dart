@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:agri_scan/screens/history_screen.dart';
+import 'package:agri_scan/components/agri_bottom_nav.dart';
 
 class DiseaseResultScreen extends StatelessWidget {
   static const String routeName = '/result';
@@ -149,6 +150,7 @@ class DiseaseResultScreen extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const AgriBottomNav(currentIndex: 3),
     );
   }
 }

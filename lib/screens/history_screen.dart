@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:agri_scan/components/agri_bottom_nav.dart';
 
 class HistoryScreen extends StatelessWidget {
   static const String routeName = '/history';
@@ -124,6 +125,7 @@ class HistoryScreen extends StatelessWidget {
           },
         ),
       ),
+      bottomNavigationBar: const AgriBottomNav(currentIndex: 4),
     );
   }
 }
